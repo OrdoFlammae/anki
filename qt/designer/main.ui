@@ -51,7 +51,7 @@
    </property>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
-     <string>&amp;Help</string>
+     <string>Help</string>
     </property>
     <addaction name="actionDocumentation"/>
     <addaction name="separator"/>
@@ -60,13 +60,13 @@
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
-     <string>&amp;Edit</string>
+     <string>Edit</string>
     </property>
     <addaction name="actionUndo"/>
    </widget>
    <widget class="QMenu" name="menuCol">
     <property name="title">
-     <string>&amp;File</string>
+     <string>File</string>
     </property>
     <addaction name="actionSwitchProfile"/>
     <addaction name="separator"/>
@@ -77,7 +77,7 @@
    </widget>
    <widget class="QMenu" name="menuTools">
     <property name="title">
-     <string>&amp;Tools</string>
+     <string>Tools</string>
     </property>
     <addaction name="actionStudyDeck"/>
     <addaction name="actionCreateFiltered"/>
@@ -98,7 +98,7 @@
   </widget>
   <action name="actionExit">
    <property name="text">
-    <string>E&amp;xit</string>
+    <string>Exit</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+Q</string>
@@ -106,7 +106,7 @@
   </action>
   <action name="actionPreferences">
    <property name="text">
-    <string>&amp;Preferences...</string>
+    <string>Preferences...</string>
    </property>
    <property name="statusTip">
     <string>Configure interface language and options</string>
@@ -120,7 +120,7 @@
   </action>
   <action name="actionAbout">
    <property name="text">
-    <string>&amp;About...</string>
+    <string>About...</string>
    </property>
    <property name="menuRole">
     <enum>QAction::AboutRole</enum>
@@ -131,7 +131,7 @@
     <bool>false</bool>
    </property>
    <property name="text">
-    <string>&amp;Undo</string>
+    <string>Undo</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+Z</string>
@@ -139,7 +139,7 @@
   </action>
   <action name="actionCheckMediaDatabase">
    <property name="text">
-    <string>Check &amp;Media...</string>
+    <string>Check Media...</string>
    </property>
    <property name="statusTip">
     <string>Check the files in the media directory</string>
@@ -147,17 +147,17 @@
   </action>
   <action name="actionOpenPluginFolder">
    <property name="text">
-    <string>&amp;Open Add-ons Folder...</string>
+    <string>Open Add-ons Folder...</string>
    </property>
   </action>
   <action name="actionDonate">
    <property name="text">
-    <string>&amp;Support Anki...</string>
+    <string>Support Anki...</string>
    </property>
   </action>
   <action name="actionDownloadSharedPlugin">
    <property name="text">
-    <string>&amp;Browse and Install...</string>
+    <string>Browse and Install...</string>
    </property>
    <property name="statusTip">
     <string/>
@@ -165,12 +165,12 @@
   </action>
   <action name="actionFullDatabaseCheck">
    <property name="text">
-    <string>&amp;Check Database</string>
+    <string>Check Database</string>
    </property>
   </action>
   <action name="actionDocumentation">
    <property name="text">
-    <string>&amp;Guide...</string>
+    <string>Guide...</string>
    </property>
    <property name="shortcut">
     <string notr="true">F1</string>
@@ -178,7 +178,7 @@
   </action>
   <action name="actionSwitchProfile">
    <property name="text">
-    <string>&amp;Switch Profile</string>
+    <string>Switch Profile</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+Shift+P</string>
@@ -186,7 +186,7 @@
   </action>
   <action name="actionExport">
    <property name="text">
-    <string>&amp;Export...</string>
+    <string>Export...</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+E</string>
@@ -194,7 +194,7 @@
   </action>
   <action name="actionImport">
    <property name="text">
-    <string>&amp;Import...</string>
+    <string>Import...</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+Shift+I</string>

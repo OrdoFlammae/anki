@@ -241,7 +241,7 @@
    </property>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
-     <string>&amp;Edit</string>
+     <string>Edit</string>
     </property>
     <addaction name="actionUndo"/>
     <addaction name="separator"/>
@@ -253,7 +253,7 @@
    </widget>
    <widget class="QMenu" name="menuJump">
     <property name="title">
-     <string>&amp;Go</string>
+     <string>Go</string>
     </property>
     <addaction name="actionFind"/>
     <addaction name="actionTags"/>
@@ -268,13 +268,13 @@
    </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
-     <string>&amp;Help</string>
+     <string>Help</string>
     </property>
     <addaction name="actionGuide"/>
    </widget>
    <widget class="QMenu" name="menu_Cards">
     <property name="title">
-     <string>&amp;Cards</string>
+     <string>Cards</string>
     </property>
     <widget class="QMenu" name="menuFlag">
      <property name="title">
@@ -298,7 +298,7 @@
    </widget>
    <widget class="QMenu" name="menu_Notes">
     <property name="title">
-     <string>&amp;Notes</string>
+     <string>Notes</string>
     </property>
     <addaction name="actionAdd"/>
     <addaction name="actionExport"/>
@@ -325,7 +325,7 @@
   </widget>
   <action name="actionReschedule">
    <property name="text">
-    <string>&amp;Reschedule...</string>
+    <string>Reschedule...</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+Alt+R</string>
@@ -333,7 +333,7 @@
   </action>
   <action name="actionSelectAll">
    <property name="text">
-    <string>Select &amp;All</string>
+    <string>Select All</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+Alt+A</string>
@@ -341,7 +341,7 @@
   </action>
   <action name="actionUndo">
    <property name="text">
-    <string>&amp;Undo</string>
+    <string>Undo</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+Alt+Z</string>
@@ -349,7 +349,7 @@
   </action>
   <action name="actionInvertSelection">
    <property name="text">
-    <string>&amp;Invert Selection</string>
+    <string>Invert Selection</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+Alt+S</string>
@@ -357,7 +357,7 @@
   </action>
   <action name="actionFind">
    <property name="text">
-    <string>&amp;Find</string>
+    <string>Find</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+F</string>
@@ -365,7 +365,7 @@
   </action>
   <action name="actionNote">
    <property name="text">
-    <string>N&amp;ote</string>
+    <string>Note</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+Shift+N</string>
@@ -373,7 +373,7 @@
   </action>
   <action name="actionNextCard">
    <property name="text">
-    <string>&amp;Next Card</string>
+    <string>Next Card</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+N</string>
@@ -381,7 +381,7 @@
   </action>
   <action name="actionPreviousCard">
    <property name="text">
-    <string>&amp;Previous Card</string>
+    <string>Previous Card</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+P</string>
@@ -389,7 +389,7 @@
   </action>
   <action name="actionGuide">
    <property name="text">
-    <string>&amp;Guide...</string>
+    <string>Guide...</string>
    </property>
    <property name="shortcut">
     <string notr="true">F1</string>
@@ -405,12 +405,12 @@
   </action>
   <action name="actionSelectNotes">
    <property name="text">
-    <string>Select &amp;Notes</string>
+    <string>Select Notes</string>
    </property>
   </action>
   <action name="actionFindReplace">
    <property name="text">
-    <string>Find and Re&amp;place...</string>
+    <string>Find and Replace...</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+Alt+F</string>
@@ -418,12 +418,12 @@
   </action>
   <action name="actionCram">
    <property name="text">
-    <string>&amp;Cram...</string>
+    <string>Cram...</string>
    </property>
   </action>
   <action name="actionTags">
    <property name="text">
-    <string>Fil&amp;ter</string>
+    <string>Filter</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+Shift+F</string>
@@ -439,7 +439,7 @@
   </action>
   <action name="actionFindDuplicates">
    <property name="text">
-    <string>Find &amp;Duplicates...</string>
+    <string>Find Duplicates...</string>
    </property>
   </action>
   <action name="actionReposition">
@@ -476,7 +476,7 @@
   </action>
   <action name="action_Info">
    <property name="text">
-    <string>&amp;Info...</string>
+    <string>Info...</string>
    </property>
    <property name="shortcut">
     <string notr="true">Ctrl+Shift+I</string>
@@ -602,7 +602,7 @@
   </action>
   <action name="actionExport">
    <property name="text">
-    <string>&amp;Export Notes...</string>
+    <string>Export Notes...</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+E</string>

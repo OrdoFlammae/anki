@@ -1,6 +1,8 @@
 # Copyright: Ankitects Pty Ltd and contributors
 # License: GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
 
+from __future__ import annotations
+
 import os
 import re
 import time
@@ -11,11 +13,16 @@ from anki import hooks
 from anki.exporting import exporters
 from anki.lang import _, ngettext
 from aqt.qt import *
-from aqt.utils import checkInvalidFilename, getSaveFile, showInfo, showWarning, tooltip
+from aqt.utils import checkInvalidFilename, getSaveFile, showWarning, tooltip
 
 
 class ExportDialog(QDialog):
-    def __init__(self, mw, did: Optional[int] = None, cids: Optional[List[int]] = None):
+    def __init__(
+        self,
+        mw: aqt.main.AnkiQt,
+        did: Optional[int] = None,
+        cids: Optional[List[int]] = None,
+    ):
         QDialog.__init__(self, mw, Qt.Window)
         self.mw = mw
         self.col = mw.col
@@ -104,17 +111,6 @@ class ExportDialog(QDialog):
             deck_name = self.decks[self.frm.deck.currentIndex()]
             deck_name = re.sub('[\\\\/?<>:*|"^]', "_", deck_name)
 
-        if (
-            not self.isVerbatim
-            and self.isApkg
-            and self.exporter.includeSched
-            and self.col.schedVer() == 2
-        ):
-            showInfo(
-                "Please switch to the regular scheduler before exporting a single deck .apkg with scheduling."
-            )
-            return
-
         filename = "{0}{1}".format(deck_name, self.exporter.ext)
         while 1:
             file = getSaveFile(
@@ -128,6 +124,9 @@ class ExportDialog(QDialog):
             if not file:
                 return
             if checkInvalidFilename(os.path.basename(file), dirsep=False):
+                continue
+            if os.path.commonprefix([self.mw.pm.base, file]) == self.mw.pm.base:
+                showWarning("Please choose a different export location.")
                 continue
             break
         self.hide()
